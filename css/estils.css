@@ -31,9 +31,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
+    width: 150px;
     height: auto;
-    padding: 25% 15%; /* 25% arriba y abajo, 15% izquierda y derecha */
+    padding: 15% 15%; /* 15% arriba y abajo, 15% izquierda y derecha */
 }
 
 nav ul {
@@ -53,4 +53,46 @@ nav a {
 .splide__slide img {
   width: 100%;
   height: auto;
+}
+
+.contenedor_juego_nuevo {
+    display: flex;
+    background-image: url("../img/requiem_horiz.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    justify-content: flex-end;
+    border: 1px solid black;
+}
+
+.contenedor_juego_nuevo_texto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 25%;
+    padding-left: 2%;
+}
+
+.juego_nuevo_titulo {
+    font-size: 50px;
+    color: white;
+}
+
+.juego_nuevo_subtitulo {
+    font-size: 20px;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.boton_juego_nuevo {
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    padding: 1% 2%;
 }
