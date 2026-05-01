@@ -96,3 +96,63 @@ nav a {
     border: 2px solid white;
     padding: 1% 2%;
 }
+
+.contenedor_tienda_juego {
+    display: flex;
+    flex-direction: row;
+    height: 750px;
+}
+
+.contenedor_tienda_juego_portada {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor_tienda_juego_detalles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.portada_juego_grande {
+    height: auto;
+    width: 500px;
+    margin-left: 20%;
+}
+
+.juego_detalles_titulo {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-top: 15%;
+}
+
+.juego_detalles_descripcion {
+    font-size: 20px;
+    color: black;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.juego_detalles_precio {
+    font-size: 40px;
+    color: #CC0000;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.boton_comprar {
+    align-self: left;
+    margin-left: 10%;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border: 2px solid black;
+    padding: 1% 2%;
+}
