@@ -156,3 +156,43 @@ nav a {
     border: 2px solid black;
     padding: 1% 2%;
 }
+
+.lista_juegos_titulo {
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+.contenedor_productos_arriba {
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+.contenedor_productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contenedor_productos_juego {
+    display: flex;
+    flex-direction: column;
+    width: 273px;
+}
+
+.productos_titulo {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.productos_precio {
+    font-size: 30px;
+    color: #CC0000;
+    font-weight: bold;
+    line-height: 1;
+}
