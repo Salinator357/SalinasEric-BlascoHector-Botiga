@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de pedido - SaliGame Store</title> <!-- Título de la pestaña -->
+    <link type="text/css" rel="stylesheet" href="../css/estils.css"> <!-- CSS -->
+    <link rel="icon" type="image/webp" href="../img/logo.webp"> <!-- Icona -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!-- Bootstrap -->
+</head>
+
+<body>
+    <header> <!-- Parte superior de la página (encabezado) -->
+        <div class="contenedor-encabezado"> <!-- Caja para el menú de navegación y el logo -->
+            <div class="logo"> <!-- Caja del logo -->
+                <img src="../img/logo.webp" class="logo-imagen" alt="Logo de SaliGame"> <!-- Imagen del logo -->
+            </div>
+            <nav> <!-- Menú de navegación -->
+                <ul> <!-- Lista de botones del menú -->
+                    <li class="lista-encabezado"><a href="../es/index.html">Inicio</a></li> <!-- Botón de inicio -->
+                    <li class="lista-encabezado-actual"><a href="../es/juegos_es.html">Juegos</a></li> <!-- Botón de juegos actual -->
+                </ul>
+            </nav>
+        </div>
+        <div class="header-info"> <!-- Barra de información de la tienda -->
+            <h1 class="header-titol">SaliGame Store</h1> <!-- Título principal de la tienda -->
+            <p class="header-descripcio">Tu tienda de videojuegos de confianza. Descubre los mejores títulos al mejor precio.</p> <!-- Descripción de la tienda -->
+        </div>
+    </header>
+
+    <center> <!-- Etiqueta para centrar todo el texto -->
+        <h2 style="color: blue; text-decoration: underline;">Formulario de pedido</h2> <!-- Título del formulario -->
+        
+        <form action="#" method="post"> <!-- Formulario para enviar datos -->
+            
+            <fieldset style="width: 50%; background-color: #eeeeee;"> <!-- Caja de los datos personales -->
+                <legend><b>Datos personales</b></legend> <!-- Título de la caja en negrita -->
+                Nombre: <input type="text" name="nom"> <!-- Casilla de nombre -->
+                <br><br> <!-- Saltos de línea -->
+                Apellidos: <input type="text" name="cognoms"> <!-- Casilla de apellidos -->
+                <br><br> <!-- Saltos de línea -->
+                Correo electrónico: <input type="email" name="email"> <!-- Casilla de email -->
+                <br><br> <!-- Salto de línea -->
+                Teléfono (opcional): <input type="tel" name="telefon"> <!-- Casilla de teléfono -->
+            </fieldset>
+
+            <br> <!-- Salto de línea -->
+
+            <fieldset style="width: 50%; background-color: #eeeeee;"> <!-- Caja de la dirección -->
+                <legend><b>Dirección de envío</b></legend> <!-- Título -->
+                Dirección completa: <input type="text" name="adreca" style="width: 300px;"> <!-- Casilla de dirección -->
+                <br><br> <!-- Saltos -->
+                Código Postal: <input type="text" name="cp" style="width: 80px;"> <!-- Casilla de código postal -->
+                <br><br> <!-- Salto -->
+                Ciudad: <input type="text" name="ciutat"> <!-- Casilla de ciudad -->
+            </fieldset>
+
+            <br> <!-- Salto -->
+
+            <fieldset style="width: 50%; background-color: #eeeeee;"> <!-- Caja para juegos -->
+                <legend><b>Selecciona los juegos que quieres comprar</b></legend> <!-- Título -->
+                <!-- Opciones de juegos con checkbox -->
+                <input type="checkbox" name="jocs" value="requiem"> Resident Evil: Requiem (69,99€)
+                <br> <!-- Salto -->
+                <input type="checkbox" name="jocs" value="burnout"> Burnout Paradise: Remastered (19,99€)
+                <br> <!-- Salto -->
+                <input type="checkbox" name="jocs" value="halflife"> Half-Life 2 (9,99€)
+                <br> <!-- Salto -->
+                <input type="checkbox" name="jocs" value="bioshock"> Bioshock: Remastered (19,99€)
+            </fieldset>
+
+            <br> <!-- Salto -->
+
+            <fieldset style="width: 50%; background-color: #eeeeee;"> <!-- Caja para método de pago -->
+                <legend><b>Método de pago</b></legend> <!-- Título -->
+                <!-- Opciones de pago con botones de opción (radio) -->
+                <input type="radio" name="pagament" value="targeta"> Tarjeta de crédito
+                <br> <!-- Salto -->
+                <input type="radio" name="pagament" value="paypal"> PayPal
+                <br> <!-- Salto -->
+                <input type="radio" name="pagament" value="transferencia"> Transferencia bancaria
+            </fieldset>
+
+            <br> <!-- Salto -->
+
+            <fieldset style="width: 50%; background-color: #eeeeee;"> <!-- Caja para las notas -->
+                <legend><b>Notas adicionales</b></legend> <!-- Título -->
+                ¿Tienes alguna preferencia para la entrega?<br> <!-- Texto -->
+                <textarea name="notes" rows="5" cols="40"></textarea> <!-- Área de texto -->
+            </fieldset>
+
+            <br><br> <!-- Hueco antes del botón -->
+            
+            <!-- Botón de enviar pedido -->
+            <button type="submit" style="background-color: green; color: white; border: 2px solid darkgreen; padding: 10px 20px; font-size: 18px; font-weight: bold; cursor: pointer;">
+                Realizar el pedido
+            </button>
+            <br><br> <!-- Hueco después del botón -->
+        </form>
+    </center>
+
+    <footer> <!-- Pie de página -->
+        <div class="footer-contenido"> <!-- Contenido del pie de página -->
+            <p>&copy; 2026 SaliGame Store. Tots els drets reservats.</p> <!-- Copyright -->
+            <a href="../formulario_cat.html" class="footer-idioma">Català</a> <!-- Enlace para cambiar el idioma -->
+        </div>
+    </footer>
+</body>
+</html>
